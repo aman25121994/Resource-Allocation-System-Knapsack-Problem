@@ -32,3 +32,13 @@ if (i < n)
 
     std::cout << "\nMaximum profit is:- " << tp;
 }
+int main()
+{
+    std::vector<float> weight(20), profit(20);
+    float capacity;
+    int num;
+
+    std::cout << "\nEnter the no. of objects:- ";
+    std::cin >> num;
+
+    std::cout << "\nEnter the wts and profits of each object:- ";
