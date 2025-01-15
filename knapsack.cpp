@@ -20,3 +20,15 @@ void knapsack(int n, std::vector<float> &weight, std::vector<float> &profit, flo
             u -= weight[i];
         }
     }
+
+if (i < n)
+        x[i] = u / weight[i];
+
+    tp += (x[i] * profit[i]);
+
+    std::cout << "\nThe result vector is:- ";
+    for (i = 0; i < n; i++)
+        std::cout << x[i] << "\t";
+
+    std::cout << "\nMaximum profit is:- " << tp;
+}
