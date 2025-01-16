@@ -56,3 +56,22 @@ for (int i = 0; i < num; i++)
     {
         ratio[i] = profit[i] / weight[i];
     }
+
+
+
+for (int i = 0; i < num; i++)
+    {
+        for (int j = i + 1; j < num; j++)
+        {
+            if (ratio[i] < ratio[j])
+            {
+                std::swap(ratio[j], ratio[i]);
+                std::swap(weight[j], weight[i]);
+                std::swap(profit[j], profit[i]);
+            }
+        }
+    }
+
+    knapsack(num, weight, profit, capacity);
+    return 0;
+}
