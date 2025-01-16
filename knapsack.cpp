@@ -42,3 +42,17 @@ int main()
     std::cin >> num;
 
     std::cout << "\nEnter the wts and profits of each object:- ";
+
+for (int i = 0; i < num; i++)
+    {
+        std::cin >> weight[i] >> profit[i];
+    }
+
+    std::cout << "\nEnter the capacity of knapsack:- ";
+    std::cin >> capacity;
+
+    std::vector<float> ratio(num);
+    for (int i = 0; i < num; i++)
+    {
+        ratio[i] = profit[i] / weight[i];
+    }
